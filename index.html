@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어피니티 유니버스 게임</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:rgb(0, 10, 25);
+        }
+        #gameContainer {
+            position: relative; 
+            
+        }
+        canvas {
+            display: block;
+            border-radius:40px;
+        }
+        #scoreBoard {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0.525);
+            padding: 15px;
+            border-radius:40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="scoreBoard">
+            <div id="distance">POINT: 0</div>
+            <div id="bestScore">BEST: 0</div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
